@@ -8,14 +8,14 @@ const keyDiv = document.querySelector('#key')
 // funciones para que cambie de color
 
 const changeBackgrounColor = (event) => {
-    const color = ["purple" , "blue", "green", "orange", "yellow", "red"];
+    const color = ["purple", "blue", "green", "orange", "yellow", "red"];
 
-   if(event.target.style.backgroundColor != "black"){
-    event.target.style.backgroundColor  = "black"
-    return
-   }
-   const randomColor = color[Math.floor(Math.random() * color.length)]
-   event.target.style.backgroundColor  = randomColor
+    if (event.target.style.backgroundColor != "black") {
+        event.target.style.backgroundColor = "black"
+        return
+    }
+    const randomColor = color[Math.floor(Math.random() * color.length)]
+    event.target.style.backgroundColor = randomColor
 }
 
 //Ejecutar las funciones
@@ -34,31 +34,57 @@ const createNewDiv = (color) => {
 };
 
 //document.addEventListener("keydown", function (event) {
-   // var keyDiv = document.getElementById("keyDiv");
+// var keyDiv = document.getElementById("keyDiv");
 
-   // if (event.key === "a") {
-      //  keyDiv.style.backgroundColor = "pink";
-   // } else if (event.key === "s") {
-   //     keyDiv.style.backgroundColor = "orange";
-   // } else if (event.key === "d") {
-    //    keyDiv.style.backgroundColor = "skyblue";
-   //} else if (event.key === "q") {
-   //    createNewDiv("purple");
-  // } else if (event.key === "w") {
-  //      createNewDiv("gray");
-  //  } else if (event.key=== "e") {
-   //     createNewDiv("brown");
-  //  }
+// if (event.key === "a") {
+//  keyDiv.style.backgroundColor = "pink";
+// } else if (event.key === "s") {
+//     keyDiv.style.backgroundColor = "orange";
+// } else if (event.key === "d") {
+//    keyDiv.style.backgroundColor = "skyblue";
+//} else if (event.key === "q") {
+//    createNewDiv("purple");
+// } else if (event.key === "w") {
+//      createNewDiv("gray");
+//  } else if (event.key=== "e") {
+//     createNewDiv("brown");
+//  }
 //});
 
+document.addEventListener("keydown", (event) => {
+    const keyDiv = document.querySelector("#key")
+
+    switch (event.key) {
+        case 'a':
+            keyDiv.style.backgroundColor = "pink"
+            break;
+        case 's':
+            keyDiv.style.backgroundColor = "orange"
+            break;
+        case 'd':
+            keyDiv.style.backgroundColor = "skyblue"
+            break;
+        case 'q':
+            createNewDiv("purple")
+            break;
+        case 'w':
+            createNewDiv("gray")
+            break;
+        case 'e':
+            createNewDiv("brown")
+            break;
+        default:
+            break;
+    }
+})
 
 
-   
-       
 
-    
-    
 
-    
-    
+
+
+
+
+
+
 

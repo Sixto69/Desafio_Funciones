@@ -34,7 +34,7 @@ const createNewDiv = (color) => {
 };
 
 document.addEventListener("keydown", function (event) {
-    var keyDiv = document.getElementById("keyDiv");
+   // var keyDiv = document.getElementById("keyDiv");
 
     if (event.key === "a") {
         keyDiv.style.backgroundColor = "pink";

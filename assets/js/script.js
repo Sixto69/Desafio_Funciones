@@ -36,17 +36,17 @@ const createNewDiv = (color) => {
 document.addEventListener("keydown", function (event) {
    // var keyDiv = document.getElementById("keyDiv");
 
-    if (event.keys === "a") {
+    if (event.key === "a") {
         keyDiv.style.backgroundColor = "pink";
-    } else if (event.keys === "s") {
+    } else if (event.key === "s") {
         keyDiv.style.backgroundColor = "orange";
-    } else if (event.keys === "d") {
+    } else if (event.key === "d") {
         keyDiv.style.backgroundColor = "skyblue";
-    } else if (event.keys === "q") {
+    } else if (event.key === "q") {
         createNewDiv("purple");
-    } else if (event.keys === "w") {
+    } else if (event.key === "w") {
         createNewDiv("gray");
-    } else if (event.keys=== "e") {
+    } else if (event.key=== "e") {
         createNewDiv("brown");
     }
 });

@@ -51,6 +51,7 @@ const createNewDiv = (color) => {
 //  }
 //});
 
+
 document.addEventListener("keydown", (event) => {
     const keyDiv = document.querySelector("#key")
 

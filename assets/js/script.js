@@ -33,23 +33,24 @@ const createNewDiv = (color) => {
     document.body.appendChild(newDiv);
 };
 
-document.addEventListener("keydown", function (event) {
+//document.addEventListener("keydown", function (event) {
    // var keyDiv = document.getElementById("keyDiv");
 
-    if (event.key === "a") {
-        keyDiv.style.backgroundColor = "pink";
-    } else if (event.key === "s") {
-        keyDiv.style.backgroundColor = "orange";
-    } else if (event.key === "d") {
-        keyDiv.style.backgroundColor = "skyblue";
-    } else if (event.key === "q") {
-        createNewDiv("purple");
-    } else if (event.key === "w") {
-        createNewDiv("gray");
-    } else if (event.key=== "e") {
-        createNewDiv("brown");
-    }
-});
+   // if (event.key === "a") {
+      //  keyDiv.style.backgroundColor = "pink";
+   // } else if (event.key === "s") {
+   //     keyDiv.style.backgroundColor = "orange";
+   // } else if (event.key === "d") {
+    //    keyDiv.style.backgroundColor = "skyblue";
+   //} else if (event.key === "q") {
+   //    createNewDiv("purple");
+  // } else if (event.key === "w") {
+  //      createNewDiv("gray");
+  //  } else if (event.key=== "e") {
+   //     createNewDiv("brown");
+  //  }
+//});
+
 
 
    

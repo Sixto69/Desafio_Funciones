@@ -20,7 +20,7 @@ const changeBackgrounColor = (event) => {
 
 //Ejecutar las funciones
 divA.addEventListener("click", changeBackgrounColor)
-divB.addEventListener("mouseover", changeBackgrounColor)
+divB.addEventListener("click", changeBackgrounColor)
 divC.addEventListener("click", changeBackgrounColor)
 divD.addEventListener("click", changeBackgrounColor)
 
@@ -36,17 +36,17 @@ const createNewDiv = (color) => {
 document.addEventListener("keydown", function (event) {
    // var keyDiv = document.getElementById("keyDiv");
 
-    if (event.key === "a") {
+    if (event.keys === "a") {
         keyDiv.style.backgroundColor = "pink";
-    } else if (event.key === "s") {
+    } else if (event.keys === "s") {
         keyDiv.style.backgroundColor = "orange";
-    } else if (event.key === "d") {
+    } else if (event.keys === "d") {
         keyDiv.style.backgroundColor = "skyblue";
-    } else if (event.key === "q") {
+    } else if (event.keys === "q") {
         createNewDiv("purple");
-    } else if (event.key === "w") {
+    } else if (event.keys === "w") {
         createNewDiv("gray");
-    } else if (event.key === "e") {
+    } else if (event.keys=== "e") {
         createNewDiv("brown");
     }
 });

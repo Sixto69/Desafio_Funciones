@@ -3,7 +3,7 @@ const divA = document.querySelector('#a')
 const divB = document.querySelector('#b')
 const divC = document.querySelector('#c')
 const divD = document.querySelector('#d')
-const keyDiv = document.querySelector('#key')
+const keyDiv = document.querySelector('key')
 
 // funciones para que cambie de color
 
@@ -53,7 +53,7 @@ const createNewDiv = (color) => {
 
 
 document.addEventListener("keydown", (event) => {
-    const keyDiv = document.querySelector("#key")
+    const keyDiv = document.querySelector("key")
 
     switch (event.key) {
         case 'a':

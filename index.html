@@ -1,81 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cambio de Color con Teclas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/b4_coloresparte2.css">
+  <title>Cambio de Color con Teclas</title>
+<style>
+  #key {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+  }
+</style>
+  
 </head>
 <body>
 
-    <style>
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: lightcoral;
-        }
+  
+<div id="key"></div>
 
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+<script src="assets/js/letras.js"></script>
 
-        .div-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 40px;
-            width: 100%;
-        }
-
-        #key {
-            background-color: white;
-            border: 1px solid black;
-            width: 200px;
-            height: 200px;
-        }
-
-        .div-container div:not(.otrosDivs) {
-            width: 200px;
-            height: 200px;
-            border: 1px solid black;
-            
-        }
-
-        .purple {
-            background-color: purple;
-        }
-
-        .grey {
-            background-color: grey;
-        }
-
-        .brown {
-            background-color: brown;
-        }
-
-        .otrosDivs {
-            width: auto;
-            height: auto;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-    </style>
-
-    <div class="div-container" id="divContainer">
-        <div id="key"></div>
-        <div class="otrosDivs" id="otrosDivsContainer">
-        </div>
-    </div>
-
-    <script src="assets/js/letras.js"></script>
 </body>
 </html>

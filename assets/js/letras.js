@@ -1,28 +1,42 @@
-const wDiv = document.getElementById("key")
-const divContainer = document.getElementById("divContainer")
-const otrosDivsContainer = document.getElementById("otrosDivsContainer")
-let color = "white"
-
-document.addEventListener('keydown', function (event) {
+function createKeyDiv(color) {
+    const keyContainer = document.getElementById('key');
+    const newKeyDiv = document.createElement('div');
+    newKeyDiv.className = 'key-div';
+    newKeyDiv.style.backgroundColor = color;
+    keyContainer.appendChild(newKeyDiv);
+  }
+  
+  // Variable global para almacenar el color
+  let currentColor = '';
+  
+  // Función para cambiar el color del div "key"
+  function changeColor(color) {
+    const keyDiv = document.getElementById('key');
+    keyDiv.style.backgroundColor = color;
+  }
+  
+  document.addEventListener('keydown', function (event) {
+    // Asignar colores según la tecla presionada
     if (event.key === 'a') {
-        wDiv.style.backgroundColor = "pink"
-        color = "pink"
+      currentColor = 'pink';
     } else if (event.key === 's') {
-        wDiv.style.backgroundColor = "orange"
-        color = "orange"
+      currentColor = 'orange';
     } else if (event.key === 'd') {
-        wDiv.style.backgroundColor = "aqua"
-        color = "aqua"
-
+      currentColor = 'skyblue';
     } else if (event.key === 'q') {
-        otrosDivsContainer.innerHTML += '<div class="purple"></div>'
-        color = "purple"
+      currentColor = 'purple';
+      createKeyDiv(currentColor);
     } else if (event.key === 'w') {
-        otrosDivsContainer.innerHTML += '<div class="grey"></div>'
-        color = "grey"
+      currentColor = 'grey';
+      createKeyDiv(currentColor);
     } else if (event.key === 'e') {
-        otrosDivsContainer.innerHTML += '<div class="brown"></div>'
-        color = "brown"
+      currentColor = 'brown';
+      createKeyDiv(currentColor);
     }
-    console.log(color)
-})
+  
+    // Cambiar el color del div "key"
+    if (currentColor) {
+      changeColor(currentColor);
+    }
+  });
+  
